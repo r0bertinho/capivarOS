@@ -1,8 +1,0 @@
-{
-  "name": "circuitblock",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular",
-  "id": "5abf3cf0"
-}
