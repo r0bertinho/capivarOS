@@ -1,4 +1,4 @@
-#include "D:\ZGAMES\zprogramacao\__VSCODE\projects\CapiVar_OS-master\src\impl\intf\print.h"
+#include "print.h"
 
 
 void kernel_main()
