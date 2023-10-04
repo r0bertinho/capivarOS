@@ -55,14 +55,13 @@ x86_64_asm_object_files := $(patsubst src/impl/x86_64/%.asm, build/x86_64/%.o, $
 
 
 # Defining all object files
-x86_64_object_files :=  $(x86_64_c_object_files)
-						$(x86_64_asm_object_files)
-						$(x86_64_cpp_object_files) 
-						$(x86_64_rust_object_files)
+x86_64_object_files :=  $(x86_64_c_object_files) $(x86_64_asm_object_files) $(x86_64_cpp_object_files) $(x86_64_rust_object_files)
 
 
 # Ignoring README.md on all folders
-IGNORED_FILES := README.md
+IGNORED_FILES_MD := $(patsubst find src/ -name '*.md', $(shell find src -type f -name '*.md'))
+IGNORED_FILES_TXT := $(patsubst find src/ -name '*.txt', $(shell find src -type f -name '*.txt'))
+IGNORED_FILES := $(IGNORED_FILES_MD) $(IGNORED_FILES_TXT)
 
 
 # Building kernel objects
