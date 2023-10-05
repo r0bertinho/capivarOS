@@ -1,5 +1,5 @@
 // Include necessary libraries
-#include <iostream>
+#include <stdio.h>
 #include <gtk/gtk.h>
 
 // Define the main function
@@ -11,7 +11,7 @@ int main(int argc, char* argv[]) {
     GtkWidget* window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
 
     // Set the window title
-    gtk_window_set_title(GTK_WINDOW(window), "Minimalist GUI - C++");
+    gtk_window_set_title(GTK_WINDOW(window), "Minimalist GUI - C");
 
     // Set the window size
     gtk_widget_set_size_request(window, 400, 300);
