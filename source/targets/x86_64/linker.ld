@@ -1,18 +1,10 @@
+OUTPUT_FORMAT(elf64-i386)
 ENTRY(start)
 
 SECTIONS
-{
-
-    . = 1M;
-
-    .boot :
     {
-        KEEP(*(.multiboot_header))
+        . = 0x100000;
+        .boot : { KEEP(*(.multiboot_header)) }
+        .data : { *(.data)}
+        .text : { *(.txt) }
     }
-
-    .text :
-    {
-        *(.text)
-    }
-
-}
