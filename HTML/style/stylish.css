@@ -1,0 +1,66 @@
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Group */
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Text */
+h1 {
+    font-size: 60px;
+    color: rgb(40, 40, 40);
+}
+
+h2 {
+    font-size: 50px;
+    color: rgb(35, 35, 35);
+}
+
+h3 {
+    font-size: 35px;
+    color: rgb(30, 30, 30);
+}
+
+h4 {
+    font-size: 30px;
+    color: rgb(25, 25, 25);
+}
+
+h5 {
+    font-size: 25px;
+    color: rgb(20, 20, 20);
+}
+
+h6 {
+    font-size: 20px;
+    color: rgb(10, 10, 10);
+}
+
+p {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+a {
+    font-size: 16;
+    color: rgb(25, 135, 215);
+}
+
+br {
+    display: block;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Actions */
+p:hover {
+    font-size: 18;
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    font-size: 18;
+    color: rgb(25, 135, 215);
+}
